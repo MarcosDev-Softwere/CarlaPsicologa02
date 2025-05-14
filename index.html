@@ -1,0 +1,653 @@
+<html lang="pt-br"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cala Pisicologa</title>
+    
+    <!--Meta tags para SEO -->
+<meta name="description" content="Equilíbrio emocional e desenvolvimento pessoal por meio de práticas psicológicas eficazes. Fortaleça sua mente e conquiste bem-estar.">
+<meta name="keywords" content="psicologia, saúde mental, equilíbrio emocional, autoconhecimento, terapia, bem-estar, mindfulness, inteligência emocional">
+<meta name="author" content="Seu Site de Psicologia">
+<meta name="google-site-verification" content="l7lBjTN2ijxf-dKZzPb2GB53CVnsFSLpwf0cf3juojo">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.seusitepsicologia.com.br/">
+<meta property="og:title" content="Bem-Estar Psicológico | Fortalecimento Emocional e Autoconhecimento">
+<meta property="og:description" content="Descubra práticas psicológicas que promovem equilíbrio emocional, inteligência emocional e saúde mental para uma vida mais plena.">
+<meta property="og:image" content="https://www.seusitepsicologia.com.br/imagem-banner.jpg">
+<meta property="og:description" content="Aprimore seu bem-estar emocional com estratégias psicológicas eficazes. Fortaleça sua mente e conquiste equilíbrio na sua vida.">
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://marcosdev-softwere.github.io/CarlaPsicologa/">
+    <meta property="twitter:title" content="Carla Psicóloga | Bem-Estar Psicológico">
+    <meta property="twitter:description" content="Fortaleça sua saúde mental com estratégias psicológicas eficazes. Descubra o caminho para o equilíbrio emocional e o bem-estar.">
+    <meta property="twitter:image" content="img/og-image.jpg">
+    
+    <!-- Favicons -->
+    
+
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/icons/ÍCONE  PADRÃO - MEGA ADUBOS.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#1B5E20">
+    <meta name="msapplication-TileColor" content="#1B5E20">
+    <meta name="theme-color" content="#ffffff">
+    
+    <!-- Fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    
+    <!-- CSS (Será adicionado posteriormente) -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="responsive.css">
+    
+    <!-- jQuery (será usado posteriormente) -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous" defer=""></script>
+    
+    <!-- Script principal (será usado posteriormente) -->
+    <script src="./main.js" defer=""></script>
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader hidden" id="preloader" style="display: none;">
+        <div class="preloader__spinner">
+            <svg viewBox="0 0 50 50" class="preloader__svg">
+                <circle class="preloader__circle" cx="25" cy="25" r="20"></circle>
+            </svg>
+        </div>
+        <img src="./CarlaPisicologa.png" alt="Mega Adubos" class="preloader__logo">
+    </div>
+
+    <!-- Cabeçalho -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header__wrapper">
+                <!-- Logo -->
+                <a href="index.html" class="header__logo-link">
+                <img src="./CarlaPisicologa.png" alt="Carla Pisicologa" class="header__logo" width="280" height="120">
+                </a>
+                
+                <!-- Navegação -->
+                <nav class="nav" id="mainNav" aria-label="Menu principal">
+                    <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu" aria-label="Abrir menu">
+                        <span class="nav__toggle-icon"></span>
+                        <span class="nav__toggle-icon"></span>
+                        <span class="nav__toggle-icon"></span>
+                    </button>
+                    
+                    <div class="nav__menu" id="navMenu">
+                        <ul class="nav__list">
+                            <li class="nav__item">
+                                <a href="#home" class="nav__link nav__link--active" data-scroll="">Home</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#servicos" class="nav__link" data-scroll="">Serviços</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#sobre" class="nav__link" data-scroll="">Sobre</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#contato" class="nav__link" data-scroll="">Contato</a>
+                            </li>
+                            <li class="nav__item nav__item--mobile">
+                                <a href="#contato" class="btn btn--primary" data-scroll="">
+                                    <i class="fas fa-file-invoice-dollar"></i>
+                                    <span>Solicitar Orçamento</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="nav__action">
+                        <a href="#contato" class="btn btn--primary" data-scroll="">
+                            <i class="fas fa-file-invoice-dollar"></i>
+                            <span>Solicitar Orçamento</span>
+                        </a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="container">
+                <div class="hero__wrapper">
+                    <div class="hero__content fade-in" data-aos="fade-right">
+                        <h1 class="hero__title">Potencialize sua saúde mental: </h1>
+                        <h2 >descubra o poder do autoconhecimento. </h2>
+                        <p class="hero__subtitle">Atendimento especializado para o bem-estar emocional e o desenvolvimento pessoal. Com abordagem técnica e acolhedora, auxilio você na construção de uma vida mais equilibrada e saudável.</p>
+                        <div class="hero__actions">
+                            <a href="#servicos" class="btn btn--yellow btn--lg" data-scroll="">
+                                <i class="fas fa-leaf"></i>
+                                <span>Nossos Serviços</span>
+                            </a>
+                            <a href="#contato" class="btn btn--outline btn--lg" data-scroll="">
+                                <i class="fas fa-headset"></i>
+                                <span>Fale Conosco</span>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="hero__visual fade-in" data-aos="fade-left">
+                        <div class="hero__image-wrapper">
+                            <img src="./CarlaPisicologa-00.png" alt="Psicóloga Carla" class="hero__image" width="600" height="400" loading="eager">
+                            <div class="hero__badge">
+                                <i class="fas fa-chart-line hero__badge-icon"></i>
+                                <span class="hero__badge-text">Desenvolva equilíbrio emocional e maximize seu bem-estar .</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hero__shapes">
+                <div class="hero__shape hero__shape--1"></div>
+                <div class="hero__shape hero__shape--2"></div>
+            </div>
+            
+            <div class="hero__scroll">
+                <a href="#servicos" class="hero__scroll-link" data-scroll="" aria-label="Rolar para baixo">
+                    <i class="fas fa-chevron-down"></i>
+                </a>
+            </div>
+        </section>
+        
+        <!-- Serviços Section -->
+        <section class="section section--light" id="servicos">
+            <div class="container">
+                <header class="section__header" data-aos="fade-up">
+                    <span class="section__subtitle">O QUE OFERECEMOS</span>
+                    <h2 class="section__title">Nossos Serviços</h2>
+                    <p class="section__description">Atendimento psicológico especializado para fortalecer seu bem-estar emocional e impulsionar seu desenvolvimento pessoal. Com abordagem técnica e personalizada, ajudamos você a alcançar equilíbrio e qualidade de vida de forma eficaz.</p>
+                </header>
+                
+                <div class="services">
+                    <div class="services__grid">
+                        <!-- Serviço 1 -->
+                        <article class="service-card" data-aos="fade-up" data-aos-delay="100">
+                            <div class="service-card__icon">
+                                <i class="fas fa-user-md icon"></i>
+                                <!--<i class="fas fa-seedling"></i>-->
+                            </div>
+                            <div class="service-card__content">
+                                <h3 class="service-card__title">Psicologia Clínica</h3>
+                                <p class="service-card__text">Foca na avaliação, diagnóstico e tratamento de transtornos mentais e emocionais. Psicólogos clínicos ajudam as pessoas a lidar com desafios psicológicos por meio de terapia e outras intervenções.</p>
+                                <a href="#contato" class="service-card__link" data-scroll="">
+                                    <span>Saiba Mais</span>
+                                    <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </article>
+                        
+                        <!-- Serviço 2 -->
+                        <article class="service-card" data-aos="fade-up" data-aos-delay="200">
+                            <div class="service-card__icon">
+                                <i class="fas fa-brain icon"></i>
+                                <!--<i class="fas fa-flask"></i>-->
+                            </div>
+                            <div class="service-card__content">
+                                <h3 class="service-card__title">Psicologia Cognitiva</h3>
+                                <p class="service-card__text">Estuda processos mentais como percepção, memória, aprendizado e tomada de decisões. Essa abordagem busca entender como as pessoas pensam e processam informações.</p>
+                                <a href="#contato" class="service-card__link" data-scroll="">
+                                    <span>Saiba Mais</span>
+                                <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </article>
+                        
+                        <!-- Serviço 3 -->
+                        <article class="service-card" data-aos="fade-up" data-aos-delay="300">
+                            <div class="service-card__icon">
+                                <i class="fas fa-users icon"></i>
+                                <!--<i class="fas fa-broom"></i>-->
+                            </div>
+                            <div class="service-card__content">
+                                <h3 class="service-card__title">Psicologia Social</h3>
+                                <p class="service-card__text">Analisa como o comportamento humano é influenciado por outros indivíduos e pelo ambiente social. Examina temas como preconceito, influência social e dinâmica de grupos.</p>
+                                <a href="#contato" class="service-card__link" data-scroll="">
+                                    <span>Saiba Mais</span>
+                                    <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section__shapes">
+                <div class="section__shape section__shape--1"></div>
+                <div class="section__shape section__shape--2"></div>
+            </div>
+        </section>
+        
+        <!-- Sobre Section -->
+        <section class="section section--green" id="sobre">
+            <div class="container">
+                <div class="about">
+                    <div class="about__image" data-aos="fade-right">
+                        <div class="about__image-wrapper">
+                            <img src="./CarlaPisicologa.png" alt="Carla Psicóloga" class="about__img" width="600" height="400" loading="lazy">
+                            <div class="about__experience">
+                                <span class="about__experience-number">5</span>
+                                <span class="about__experience-text">Anos de<br>Experiência</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="about__content" data-aos="fade-left">
+                        <header class="section__header section__header--left">
+                            <span class="section__subtitle section__subtitle--light">CONHEÇA NOSSA CLÍNICA</span>
+                            <h2 class="section__title section__title--light">Carla Pisicóloga</h2>
+                        </header>
+                        
+                        <div class="about__text">
+                            <p>Somos especialistas em soluções para o bem-estar psicológico, oferecendo abordagens personalizadas para promover saúde mental e desenvolvimento pessoal.</p>
+                            <p>Nossa equipe de profissionais qualificados trabalha para proporcionar suporte emocional e terapias eficazes, contribuindo diretamente para o equilíbrio, a resiliência e a qualidade de vida dos nossos pacientes.</p>
+                        </div>
+                        
+                        <div class="stats">
+                            <div class="stats__grid">
+                                <div class="stat-item" data-aos="fade-up" data-aos-delay="100">
+                                    <span class="stat-item__number" data-count="75">0</span>
+                                    <span class="stat-item__label">% Clientes satisfeitos</span>
+                                </div>
+                                
+                                <div class="stat-item" data-aos="fade-up" data-aos-delay="200">
+                                    <span class="stat-item__number" data-count="1">Bahia</span>
+                                    <span class="stat-item__label">Estados atendidos</span>
+                                </div>
+                                
+                                <div class="stat-item" data-aos="fade-up" data-aos-delay="300">
+                                    <span class="stat-item__number" data-count="50">0</span>
+                                    <span class="stat-item__label">% de aumento no percentual de evolução no bem-estar emocional e desempenho cognitivo.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section__shapes">
+                <div class="section__shape section__shape--3"></div>
+                <div class="section__shape section__shape--4"></div>
+            </div>
+        </section>
+        
+        <!-- Benefícios Section -->
+        <section class="section section--light">
+            <div class="container">
+                <header class="section__header" data-aos="fade-up">
+                    <span class="section__subtitle">POR QUE NOS ESCOLHER</span>
+                    <h2 class="section__title">Nossos Diferenciais</h2>
+                    <p class="section__description">Nossa abordagem psicológica passa por um rigoroso processo de avaliação e aprimoramento contínuo, garantindo intervenções eficazes e baseadas em evidências, promovendo o equilíbrio emocional, o bem-estar mental e o desenvolvimento pessoal.</p>
+                </header>
+                
+                <div class="benefits">
+                    <div class="benefits__grid">
+                        <!-- Benefício 1 -->
+                        <div class="benefit-card" data-aos="fade-up" data-aos-delay="100">
+                            <div class="benefit-card__icon">
+                                <i class="fas fa-medal"></i>
+                            </div>
+                            <h3 class="benefit-card__title">Qualidade Superior</h3>
+                            <p class="benefit-card__text">Nossa metodologia em psicologia é constantemente analisada e aprimorada, assegurando práticas eficientes e fundamentadas em pesquisas científicas. Buscamos proporcionar estabilidade emocional, fortalecer a saúde mental e estimular o crescimento pessoal de forma consistente e eficaz.</p>
+                        </div>
+                        
+                        <!-- Benefício 2 -->
+                        <div class="benefit-card" data-aos="fade-up" data-aos-delay="200">
+                            <div class="benefit-card__icon">
+                                <i class="fa fa-rocket" aria-hidden="true"></i>
+                                <!--<i class="fas fa-microscope"></i>-->
+                            </div>
+                            <h3 class="benefit-card__title">Abordagens Psicoterapêuticas Modernas</h3>
+                            <p class="benefit-card__text">Empregamos abordagens psicoterapêuticas inovadoras e fundamentadas em evidências para proporcionar tratamentos altamente eficazes, voltados ao fortalecimento da saúde mental e ao equilíbrio emocional. Nossa metodologia passa por aprimoramento contínuo, garantindo estratégias personalizadas que atendem às necessidades individuais e promovem resultados consistentes e duradouros.</p>
+                        </div>
+                        
+                        <!-- Benefício 3 -->
+
+                   
+                        
+                        <div class="benefit-card" data-aos="fade-up" data-aos-delay="300">
+                            <div class="benefit-card__icon">
+                                <i class="fa fa-hourglass" aria-hidden="true"></i>
+                                <!--<i class="fas fa-leaf"></i>-->
+                            </div>
+                            <h3 class="benefit-card__title">Bem-estar Psicológico Duradouro</h3>
+                            <p class="benefit-card__text">Nossas abordagens terapêuticas são estruturadas com base em princípios científicos e evidências clínicas, garantindo intervenções eficazes voltadas à promoção da saúde mental e ao fortalecimento emocional contínuo. Implementamos estratégias sustentáveis que favorecem o bem-estar psicológico duradouro, proporcionando equilíbrio e aprimoramento da qualidade de vida de forma consistente e personalizada.</p>
+                        </div>
+                        
+                        <!-- Benefício 4 -->
+                        <div class="benefit-card" data-aos="fade-up" data-aos-delay="400">
+                            <div class="benefit-card__icon">
+                                <i class="fas fa-robot"></i>
+                                <!--<i class="fas fa-truck-moving"></i>-->
+                            </div>
+                            <h3 class="benefit-card__title">Processos Terapêuticos Otimizados</h3>
+                            <p class="benefit-card__text">Implementamos abordagens terapêuticas estruturadas e baseadas em evidências, assegurando suporte psicológico qualificado e adaptado às necessidades individuais. Nossos processos otimizados garantem um atendimento seguro, estratégico e personalizado, promovendo o bem-estar emocional e um desenvolvimento contínuo e sustentável da saúde mental.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- CTA Section -->
+        <section class="cta">
+            <div class="container">
+                <div class="cta__wrapper" data-aos="fade-up">
+                    <h2 class="cta__title">Pronto para fortalecer seu bem-estar emocional?</h2>
+                    <p class="cta__text">Entre em contato conosco hoje mesmo e descubra como nossas abordagens terapêuticas podem transformar sua saúde mental e promover equilíbrio psicológico duradouro.</p>
+                    <a href="#contato" class="btn btn--yellow btn--lg" data-scroll="">
+                        <i class="fas fa-file-signature"></i>
+                        <span>Solicitar Orçamento</span>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="cta__overlay"></div>
+        </section>
+        
+        <!-- Contato Section -->
+        <section class="section section--light" id="contato">
+            <div class="container">
+                <header class="section__header" data-aos="fade-up">
+                    <span class="section__subtitle">FALE CONOSCO</span>
+                    <h2 class="section__title">Entre em Contato</h2>
+                    <p class="section__description">Estamos prontos para atender às suas necessidades. Entre em contato conosco e descubra como podemos ajudar.</p>
+                </header>
+                
+                <div class="contact">
+                    <div class="contact__grid">
+                        <!-- Informações de Contato -->
+                        <div class="contact__info" data-aos="fade-right">
+                            <h3 class="contact__heading">Informações de Contato</h3>
+                            
+                            <ul class="contact__list">
+                                <li class="contact__item">
+                                    <div class="contact__item-icon">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                    </div>
+                                    <div class="contact__item-content">
+                                        <h4 class="contact__item-title">Endereço</h4>
+                                        <p class="contact__item-text">R. Enock Saturnino da Silva - Ipitanga , Lauro de Freitas-BA , 42706-120</p>
+                                    </div>
+                                </li>
+                                
+                                <li class="contact__item">
+                                    <div class="contact__item-icon">
+                                        <i class="fas fa-phone-alt"></i>
+                                    </div>
+                                    <div class="contact__item-content">
+                                        <h4 class="contact__item-title">Telefone</h4>
+                                        <p class="contact__item-text">
+                                            <a href="tel:+5571996201179" class="contact__link">(71) 99991-3539</a><br> 
+                                            <a href="tel:+5571997394368" class="contact__link">(71) 98671-0611</a>
+                                        </p>
+                                    </div>
+                                </li>
+                                
+                                <li class="contact__item">
+                                    <div class="contact__item-icon">
+                                        <i class="fas fa-envelope"></i>
+                                    </div>
+                                    <div class="contact__item-content">
+                                        <h4 class="contact__item-title">Email</h4>
+                                        <p class="contact__item-text">
+                                            <a href="mailto:contato@megaadubos.com.br" class="contact__link">carlam.work0611@gmail.com</a>
+                                        </p>
+                                    </div>
+                                </li>
+                                
+                                <li class="contact__item">
+                                    <div class="contact__item-icon">
+                                        <i class="fas fa-clock"></i>
+                                    </div>
+                                    <div class="contact__item-content">
+                                        <h4 class="contact__item-title">Horário de Atendimento</h4>
+                                        <p class="contact__item-text">Segunda a Sexta: 8h às 18h<br>Sábado: 8h às 12h</p>
+                                    </div>
+                                </li>
+                            </ul>
+                            
+                            <div class="contact__social">
+                                <h4 class="contact__social-title">Redes Sociais</h4>
+                                <div class="social">
+                                    <a href="#" class="social__link" aria-label="Facebook">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a>
+                                    <a href="#" class="social__link" aria-label="Instagram">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                    <a href="#" class="social__link" aria-label="YouTube">
+                                        <i class="fab fa-youtube"></i>
+                                    </a>
+                                    <a href="#" class="social__link" aria-label="LinkedIn">
+                                        <i class="fab fa-linkedin-in"></i>
+                                    </a>
+                                    <a href="https://wa.me/5571987772415" class="social__link social__link--whatsapp" aria-label="WhatsApp">
+                                        <i class="fab fa-whatsapp"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Formulário de Contato -->
+                        <div class="contact__form" data-aos="fade-left">
+                          <form id="contactForm" class="form" action="https://formsubmit.co/marcosviniciussouzasilva07@gmail.com" method="POST" target="_blank">
+
+                                <div class="form__row">
+                                    <div class="form__group">
+                                        <label for="name" class="form__label">Nome Completo</label>
+                                        <div class="form__input-wrapper">
+                                            <i class="form__input-icon fas fa-user"></i>
+                                            <input type="text" id="name" name="name" class="form__input" placeholder="Seu nome" required="">
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="form__group">
+                                        <label for="email" class="form__label">Email</label>
+                                        <div class="form__input-wrapper">
+                                            <i class="form__input-icon fas fa-envelope"></i>
+                                            <input type="email" id="email" name="email" class="form__input" placeholder="Seu email" required="">
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="form__row">
+                                    <div class="form__group">
+                                        <label for="phone" class="form__label">Telefone</label>
+                                        <div class="form__input-wrapper">
+                                            <i class="form__input-icon fas fa-phone-alt"></i>
+                                            <input type="tel" id="phone" name="phone" class="form__input" placeholder="Seu telefone" required="">
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="form__group">
+                                        <label for="subject" class="form__label">Assunto</label>
+                                        <div class="form__input-wrapper">
+                                            <i class="form__input-icon fas fa-tag"></i>
+                                            <select id="subject" name="subject" class="form__input" required="">
+                                                <option value="" disabled="" selected="">Selecione uma opção</option>
+                                                <option value="Orçamento Fertilizantes">Orçamento Psicologia Clínica</option>
+                                                <option value="Orçamento Varredura">Orçamento Psicologia Cognitiva</option>
+                                                <option value="Informações Gerais">Informações Gerais</option>
+                                                <option value="Suporte Técnico">Suporte Técnico</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="form__group">
+                                    <label for="message" class="form__label">Mensagem</label>
+                                    <div class="form__input-wrapper">
+                                        <i class="form__input-icon fas fa-comment-alt"></i>
+                                        <textarea id="message" name="message" class="form__input form__textarea" placeholder="Sua mensagem" required=""></textarea>
+                                    </div>
+                                </div>
+                                
+                                <div class="form__group form__group--checkbox">
+                                    <label class="form__checkbox-label">
+                                        <input type="checkbox" name="agree" id="agree" class="form__checkbox" required="">
+                                        <span class="form__checkbox-text">Concordo com a <a href="#" class="form__link">Política de Privacidade</a></span>
+                                    </label>
+                                </div>
+                                
+                                <!-- Campos ocultos para FormSubmit.co -->
+                                <input type="hidden" name="_captcha" value="false">
+                                <input type="hidden" name="_next" value="http://bit.ly/3GTncxY">
+                                <input type="hidden" name="_subject" value="Novo contato pelo site - marcosviniciussouzasilva07">
+                                <input type="text" name="_honey" style="display:none">
+                                
+                                <div class="form__actions">
+                                    <button type="submit" class="btn btn--primary btn--full">
+                                        <i class="fas fa-paper-plane"></i>
+                                        <span>Enviar Mensagem</span>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section__shapes">
+                <div class="section__shape section__shape--5"></div>
+                <div class="section__shape section__shape--6"></div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__top">
+                <div class="footer__brand">
+                    <a href="index.html" class="footer__logo-link">
+                        <img src="./CarlaPisicologa.png" alt="Psicóloga Carla" class="footer__logo" width="160" height="53">
+                    </a>
+                    <p class="footer__tagline">Soluções Integradas para o Bem-Estar Psicológico e a Renovação Mental.</p>
+                </div>
+                
+                <div class="footer__nav">
+                    <div class="footer__nav-col">
+                        <h3 class="footer__heading">Links Rápidos</h3>
+                        <ul class="footer__links">
+                            <li><a href="#home" class="footer__link" data-scroll="">Home</a></li>
+                            <li><a href="#servicos" class="footer__link" data-scroll="">Serviços</a></li>
+                            <li><a href="#sobre" class="footer__link" data-scroll="">Sobre</a></li>
+                            <li><a href="#contato" class="footer__link" data-scroll="">Contato</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer__nav-col">
+                        <h3 class="footer__heading">Atendimentos</h3>
+                        <ul class="footer__links">
+                            <li><a href="#" class="footer__link">Psicologia Clínica</a></li>
+                            <li><a href="#" class="footer__link">Psicologia Cognitiva</a></li>
+                            <li><a href="#" class="footer__link">Psicologia Social</a></li>
+                            <li><a href="#" class="footer__link">Informações Gerais</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer__nav-col">
+                        <h3 class="footer__heading">Contato</h3>
+                        <ul class="footer__contact">
+                            <li class="footer__contact-item">
+                                <i class="fas fa-map-marker-alt footer__contact-icon"></i>
+                                <span class="footer__contact-text">Rua. Enoque Saturnino da Silva, Salvador  - BA, 44120-000</span>
+                            </li>
+                            <li class="footer__contact-item">
+                                <i class="fas fa-phone-alt footer__contact-icon"></i>
+                                <span class="footer__contact-text">(71) 98671-0611 <br> (71) 99991-3539</span>
+
+                                                                                                                                                                                                                 
+                            </li>
+                            <li class="footer__contact-item">
+                                <i class="fas fa-envelope footer__contact-icon"></i>
+                                <span class="footer__contact-text">carlam.work0611@gmail.com</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer__bottom">
+                <div class="footer__copyright">
+                    <p>© <span id="currentYear">2025</span> CarlaPisicologa. Todos os direitos reservados.</p>
+                </div>
+                
+                <div class="footer__social">
+                    <a href="#" class="footer__social-link" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="footer__social-link" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="footer__social-link" aria-label="YouTube">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                    <a href="#" class="footer__social-link" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+                
+                <div class="footer__developer">
+                    <p>Desenvolvido com <i class="fas fa-heart"></i> por <a href="#" class="footer__developer-link">Marcos Vinícius</a></p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer__shapes">
+            <div class="footer__shape footer__shape--1"></div>
+            <div class="footer__shape footer__shape--2"></div>
+        </div>
+    </footer>
+    
+    <!-- Back to Top Button -->
+    <a href="#home" class="back-to-top" id="backToTop" data-scroll="" aria-label="Voltar ao topo">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+    
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/5571996201179?text=Olá,%20gostaria%20de%20informações%20sobre%20a%20Mega%20Adubos" class="whatsapp-btn" target="_blank" rel="noopener noreferrer" aria-label="Falar pelo WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+        <span class="whatsapp-btn__tooltip">Fale conosco</span>
+    </a>
+    
+    <!-- Cookie Consent -->
+    <div class="cookie-consent" id="cookieConsent">
+        <div class="cookie-consent__content">
+            <div class="cookie-consent__icon">
+                <i class="fas fa-cookie-bite"></i>
+            </div>
+            <div class="cookie-consent__text">
+                <h3 class="cookie-consent__title">Nós usamos cookies</h3>
+                <p class="cookie-consent__description">Este site usa cookies para garantir que você obtenha a melhor experiência em nosso site.</p>
+            </div>
+            <div class="cookie-consent__actions">
+                <button class="btn btn--sm btn--outline-white" id="cookieSettings">Configurações</button>
+                <button class="btn btn--sm btn--yellow" id="cookieAccept">Aceitar todos</button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Esquema de dados estruturados para SEO -->
+    <script type="application/ld+json">
+   
+    </script>
+    
+    <!-- Esquema de dados locais para SEO -->
+    <script type="application/ld+json">
+       
+    </script>
+
+</body>
+</html>
